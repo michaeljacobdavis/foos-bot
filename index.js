@@ -5,6 +5,7 @@ const canRespond = require('./lib/whitelist').canRespond;
 const token = process.env.SLACK_API_TOKEN || '';
 
 module.exports = bot = new Bot(token);
+
 bot.currentGames = {};
 bot.maximum = 4;
 
