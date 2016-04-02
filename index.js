@@ -35,7 +35,7 @@ const commands = {
       }
 
       currentGame.players[message.user] = data.user.name;
-      response(`Current payers:  ${Object.keys(currentGame.players).map(key => currentGame.players[key]).join(', ')}`);
+      response(`Current players:  ${Object.keys(currentGame.players).map(key => currentGame.players[key]).join(', ')}`);
 
       const currentPlayers = Object.keys(currentGame.players);
 
@@ -60,6 +60,7 @@ const commands = {
 
 bot.rtm.on(events.MESSAGE, (message) => {
   canRespond(bot.web, message.channel, (error, respond) => {
+    console.log(respond)
     if (error || !respond) {
       return;
     }
