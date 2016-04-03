@@ -9,6 +9,11 @@ module.exports = bot = new Bot(token);
 bot.currentGames = {};
 bot.maximum = 4;
 
+bot.use(function (next, event, data) {
+  debugger;
+  next();
+});
+
 const commands = {
   '!start': function (message, response) {
     if (message.channel in this.currentGames) {
@@ -58,16 +63,10 @@ const commands = {
   }
 };
 
-bot.rtm.on(events.MESSAGE, (message) => {
-  canRespond(bot.web, message.channel, (error, respond) => {
-    console.log(respond)
-    if (error || !respond) {
-      return;
-    }
-    if (message.text in commands) {
-      commands[message.text].call(bot, message, (response) => {
-        bot.rtm.sendMessage(response, message.channel);
-      });
-    }
-  });
+bot.on(events.MESSAGE, (message) => {
+  if (message.text in commands) {
+    commands[message.text].call(bot, message, (response) => {
+      bot.rtm.sendMessage(response, message.channel);
+    });
+  }
 });

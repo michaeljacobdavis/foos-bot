@@ -13,7 +13,8 @@
   "license": "ISC",
   "dependencies": {
     "@slack/client": "^2.3.0",
-    "array-shuffle": "^1.0.0"
+    "array-shuffle": "^1.0.0",
+    "wrap-fn": "^0.1.5"
   },
   "devDependencies": {
     "eslint": "^2.6.0",
