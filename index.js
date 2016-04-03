@@ -1,18 +1,23 @@
 const Bot = require('./lib/bot');
-const events = require('@slack/client').RTM_EVENTS;
+const slack = require('@slack/client');
+const util = require('util');
 const shuffle = require('array-shuffle');
-const canRespond = require('./lib/whitelist').canRespond;
+const WebClient = slack.WebClient;
+const events = slack.RTM_EVENTS;
 const token = process.env.SLACK_API_TOKEN || '';
 
-module.exports = bot = new Bot(token);
+function FoosBot (token) {
+  this.web = new WebClient(token);
+  Bot.apply(this, arguments);
+}
 
+util.inherits(FoosBot, Bot);
+
+module.exports = bot = new FoosBot(token);
+
+bot.start();
 bot.currentGames = {};
 bot.maximum = 4;
-
-bot.use(function (next, event, data) {
-  debugger;
-  next();
-});
 
 const commands = {
   '!start': function (message, response) {
@@ -66,7 +71,7 @@ const commands = {
 bot.on(events.MESSAGE, (message) => {
   if (message.text in commands) {
     commands[message.text].call(bot, message, (response) => {
-      bot.rtm.sendMessage(response, message.channel);
+      bot.sendMessage(response, message.channel);
     });
   }
 });

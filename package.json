@@ -4,7 +4,6 @@
   "engines": {
     "node": "^5.0.0"
   },
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,5 +19,17 @@
     "eslint": "^2.6.0",
     "forever": "^0.15.1",
     "nodemon": "^1.9.1"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michaeljacobdavis/foos-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/michaeljacobdavis/foos-bot/issues"
+  },
+  "homepage": "https://github.com/michaeljacobdavis/foos-bot#readme",
+  "description": ""
 }
