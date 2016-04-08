@@ -16,9 +16,12 @@
     "wrap-fn": "^0.1.5"
   },
   "devDependencies": {
+    "code": "^2.2.0",
     "eslint": "^2.6.0",
     "forever": "^0.15.1",
-    "nodemon": "^1.9.1"
+    "lab": "^10.3.1",
+    "nodemon": "^1.9.1",
+    "rewire": "^2.5.1"
   },
   "directories": {
     "test": "tests"
