@@ -5,26 +5,17 @@
     "node": "^5.0.0"
   },
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Mike Davis <mdavis@walmartlabs.com>",
-  "license": "ISC",
+  "author": "Mike Davis",
+  "license": "MIT",
   "dependencies": {
     "@slack/client": "^2.3.0",
     "array-shuffle": "^1.0.0",
-    "wrap-fn": "^0.1.5"
+    "slacky": "^1.0.0"
   },
   "devDependencies": {
-    "code": "^2.2.0",
     "eslint": "^2.6.0",
     "forever": "^0.15.1",
-    "lab": "^10.3.1",
-    "nodemon": "^1.9.1",
-    "rewire": "^2.5.1"
-  },
-  "directories": {
-    "test": "tests"
+    "nodemon": "^1.9.1"
   },
   "repository": {
     "type": "git",
