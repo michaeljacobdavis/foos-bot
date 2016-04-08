@@ -44,7 +44,7 @@ const commands = {
         return response('Sorry, the maximum number of players have joined.');
       }
 
-      currentGame.players[message.user] = data.user.name;
+      currentGame.players[message.user] = data.user.real_name || data.user.name;
       response(`Current players:  ${Object.keys(currentGame.players).map(key => currentGame.players[key]).join(', ')}`);
 
       const currentPlayers = Object.keys(currentGame.players);
