@@ -9,6 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "@slack/client": "^2.3.0",
+    "async": "^2.0.0-rc.3",
     "lowdb": "^0.12.5",
     "slacky": "^1.0.0"
   },
