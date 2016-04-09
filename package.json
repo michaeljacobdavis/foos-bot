@@ -9,7 +9,7 @@
   "license": "MIT",
   "dependencies": {
     "@slack/client": "^2.3.0",
-    "array-shuffle": "^1.0.0",
+    "lowdb": "^0.12.5",
     "slacky": "^1.0.0"
   },
   "devDependencies": {
