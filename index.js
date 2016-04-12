@@ -7,6 +7,8 @@ const stopListen = require('./lib/listeners/stop');
 const outListen = require('./lib/listeners/out');
 const winListen = require('./lib/listeners/win');
 const helpListen = require('./lib/listeners/help');
+const statsListen = require('./lib/listeners/stats');
+const statListen = require('./lib/listeners/stat');
 const token = process.env.SLACK_API_TOKEN || '';
 
 module.exports = bot = new Bot(token);
@@ -17,7 +19,16 @@ bot.currentGames = {};
 bot.maximum = 4;
 
 // Add listeners
-[startListen, inListen, outListen, stopListen, winListen, helpListen].forEach((listener) => {
+[
+  startListen,
+  inListen,
+  outListen,
+  stopListen,
+  winListen,
+  helpListen,
+  statListen,
+  statsListen
+].forEach((listener) => {
   bot.listen(listener.matcher, listener.callback);
 })
 
