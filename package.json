@@ -11,7 +11,8 @@
     "@slack/client": "^2.3.0",
     "async": "^2.0.0-rc.3",
     "lowdb": "^0.12.5",
-    "slacky": "*"
+    "slacky": "*",
+    "slacky-middleware-white-black-list": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^2.6.0",
