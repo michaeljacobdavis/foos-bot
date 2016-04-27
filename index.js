@@ -17,6 +17,7 @@ bot.use(whitelist(['foos', 'mikestest']));
 bot.web = new WebClient(token);
 bot.currentGames = {};
 bot.maximum = 4;
+bot.timeout = 1 * 60 * 1000;
 
 // Add listeners
 [
