@@ -10,7 +10,8 @@ const helpListen = require('./lib/listeners/help');
 const statsListen = require('./lib/listeners/stats');
 const statListen = require('./lib/listeners/stat');
 const rollstatsListen = require('./lib/listeners/rollstats');
-const token = process.env.SLACK_API_TOKEN || '';
+const token = process.env.SLACK_API_TOKEN || 'xoxb-42755557314-EKXlEOaUqrqu8WjAcF0T1hCp'; 
+//'xoxb-39676866451-yDl4tqlxCqWt4uQtNpuYZ7Yr'; //xoxp-2152601087-2751185020-12425634406-7d4e8896a9';
 
 module.exports = bot = new Bot(token);
 bot.web = new WebClient(token);
