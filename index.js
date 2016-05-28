@@ -33,7 +33,4 @@ bot.timeout = 10 * 60 * 1000;
   bot.listen(listener.matcher, listener.callback);
 });
 
-provider.init((err, store) => {
-  bot.store = store;
-  bot.start();
-});
+bot.start();
