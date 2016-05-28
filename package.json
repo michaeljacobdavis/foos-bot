@@ -21,6 +21,7 @@
   },
   "devDependencies": {
     "eslint": "^2.6.0",
+    "foreman": "^1.4.1",
     "nodemon": "^1.9.1"
   },
   "repository": {
