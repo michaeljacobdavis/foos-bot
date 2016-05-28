@@ -2,6 +2,5 @@ start.sh
 db.json
 node_modules
 npm-debug.log
-Procfile
 .env
 .DS_Store
