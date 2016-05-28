@@ -10,7 +10,6 @@ const helpListen = require('./lib/listeners/help');
 const statsListen = require('./lib/listeners/stats');
 const statListen = require('./lib/listeners/stat');
 const token = process.env.SLACK_API_TOKEN || '';
-const provider = require('./lib/providers')[process.env.STORE_PROVIDER || 'low'];
 
 module.exports = bot = new Bot(token);
 bot.web = new WebClient(token);
