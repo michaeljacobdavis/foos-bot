@@ -9,7 +9,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "nf start",
-    "start": "node index.js",
+    "start": "node --debug index.js",
     "stop": "forever stopall"
   },
   "dependencies": {
