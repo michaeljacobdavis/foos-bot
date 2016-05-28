@@ -10,6 +10,7 @@ const helpListen = require('./lib/listeners/help');
 const statsListen = require('./lib/listeners/stats');
 const statListen = require('./lib/listeners/stat');
 const token = process.env.SLACK_API_TOKEN || '';
+const provider = require('./lib/providers')[process.env.STORE_PROVIDER || 'low'];
 
 module.exports = bot = new Bot(token);
 bot.web = new WebClient(token);
@@ -31,6 +32,9 @@ bot.timeout = 10 * 60 * 1000;
   statsListen
 ].forEach((listener) => {
   bot.listen(listener.matcher, listener.callback);
-})
+});
 
-bot.start();
+provider.init((err, store) => {
+  bot.store = store;
+  bot.start();
+});

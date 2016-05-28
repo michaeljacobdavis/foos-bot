@@ -8,15 +8,19 @@
   "author": "Mike Davis",
   "license": "MIT",
   "scripts": {
+    "dev": "nf start",
     "start": "node index.js",
     "stop": "forever stopall"
   },
   "dependencies": {
     "@slack/client": "^2.3.0",
     "async": "^2.0.0-rc.3",
-    "lowdb": "^0.12.5",
-    "slacky": "*",
     "forever": "^0.15.1",
+    "lodash": "^4.13.1",
+    "lowdb": "^0.12.5",
+    "mongodb": "^1.4.40",
+    "monk": "^1.0.1",
+    "slacky": "*",
     "slacky-middleware-white-black-list": "^1.0.0"
   },
   "devDependencies": {
