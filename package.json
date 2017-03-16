@@ -7,6 +7,10 @@
   "main": "index.js",
   "author": "Mike Davis",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "rolling": "node index.js --rolling"
+  },
   "dependencies": {
     "@slack/client": "^2.3.0",
     "async": "^2.0.0-rc.3",

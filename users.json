@@ -2,23 +2,23 @@
   "users": [
     {
       "id": "U18LF47H9",
-      "wins": 12,
-      "losses": 4
+      "wins": 1,
+      "losses": 0
     },
     {
       "id": "U18N7GD98",
-      "wins": 7,
-      "losses": 9
+      "wins": 1,
+      "losses": 0
     },
     {
       "id": "U18N374SZ",
-      "wins": 6,
-      "losses": 10
+      "wins": 0,
+      "losses": 1
     },
     {
       "id": "U18N82DJ5",
-      "wins": 7,
-      "losses": 9
+      "wins": 0,
+      "losses": 1
     }
   ]
 }

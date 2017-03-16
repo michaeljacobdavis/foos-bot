@@ -1,0 +1,220 @@
+{
+  "games": [
+    {
+      "winner": [
+        "U18LF47H9",
+        "U18N374SZ"
+      ],
+      "loser": [
+        "U18N82DJ5",
+        "U18N7GD98"
+      ],
+      "winningFieldColor": "BLUE",
+      "timestamp": 1489636590174
+    },
+    {
+      "winner": [
+        "U18N7GD98",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N82DJ5",
+        "U18N374SZ"
+      ],
+      "winningFieldColor": "BLUE",
+      "timestamp": 1489638499976
+    },
+    {
+      "winner": [
+        "U18N82DJ5",
+        "U18N374SZ"
+      ],
+      "loser": [
+        "U18N7GD98",
+        "U18LF47H9"
+      ],
+      "winningFieldColor": "WHITE",
+      "timestamp": 1489638583381
+    },
+    {
+      "winner": [
+        "U18N82DJ5",
+        "U18N374SZ"
+      ],
+      "loser": [
+        "U18N7GD98",
+        "U18LF47H9"
+      ],
+      "winningFieldColor": "WHITE",
+      "timestamp": 1489640030303
+    },
+    {
+      "winner": [
+        "U18N7GD98",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N82DJ5",
+        "U18N374SZ"
+      ],
+      "winningFieldColor": "BLUE",
+      "timestamp": 1489666905521
+    },
+    {
+      "winner": [
+        "U18N7GD98",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N82DJ5",
+        "U18N374SZ"
+      ],
+      "winningFieldColor": "BLUE",
+      "timestamp": 1489667519761
+    },
+    {
+      "winner": [
+        "U18N82DJ5",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N374SZ",
+        "U18N7GD98"
+      ],
+      "winningFieldColor": "WHITE",
+      "timestamp": 1489668273023
+    },
+    {
+      "winner": [
+        "U18N82DJ5",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N374SZ",
+        "U18N7GD98"
+      ],
+      "winningFieldColor": "WHITE",
+      "timestamp": 1489668337248
+    },
+    {
+      "winner": [
+        "U18N82DJ5",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N374SZ",
+        "U18N7GD98"
+      ],
+      "winningFieldColor": "WHITE",
+      "timestamp": 1489668468836
+    },
+    {
+      "winner": [
+        "U18N82DJ5",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N374SZ",
+        "U18N7GD98"
+      ],
+      "winningFieldColor": "WHITE",
+      "timestamp": 1489669124819
+    },
+    {
+      "winner": [
+        "U18N374SZ",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N7GD98",
+        "U18N82DJ5"
+      ],
+      "winningFieldColor": "WHITE",
+      "timestamp": 1489669227976
+    },
+    {
+      "winner": [
+        "U18N7GD98",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N374SZ",
+        "U18N82DJ5"
+      ],
+      "winningFieldColor": "WHITE",
+      "timestamp": 1489669271891
+    },
+    {
+      "winner": [
+        "U18N7GD98",
+        "U18N82DJ5"
+      ],
+      "loser": [
+        "U18N374SZ",
+        "U18LF47H9"
+      ],
+      "winningFieldColor": "BLUE",
+      "timestamp": 1489669522666
+    },
+    {
+      "winner": [
+        "U18N374SZ",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N82DJ5",
+        "U18N7GD98"
+      ],
+      "winningFieldColor": "WHITE",
+      "timestamp": 1489669695062
+    },
+    {
+      "winner": [
+        "U18N82DJ5",
+        "U18N7GD98"
+      ],
+      "loser": [
+        "U18N374SZ",
+        "U18LF47H9"
+      ],
+      "winningFieldColor": "BLUE",
+      "timestamp": 1489669769399
+    },
+    {
+      "winner": [
+        "U18N82DJ5",
+        "U18N7GD98"
+      ],
+      "loser": [
+        "U18N374SZ",
+        "U18LF47H9"
+      ],
+      "winningFieldColor": "BLUE",
+      "timestamp": 1489675206347
+    },
+    {
+      "winner": [
+        "U18N374SZ",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N82DJ5",
+        "U18N7GD98"
+      ],
+      "winningFieldColor": "WHITE",
+      "timestamp": 1489675303753
+    },
+    {
+      "winner": [
+        "U18N7GD98",
+        "U18N82DJ5"
+      ],
+      "loser": [
+        "U18N374SZ",
+        "U18LF47H9"
+      ],
+      "winningFieldColor": "BLUE",
+      "timestamp": 1489675726568
+    }
+  ]
+}
