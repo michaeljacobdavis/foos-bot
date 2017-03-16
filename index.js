@@ -9,7 +9,6 @@ const winListen = require('./lib/listeners/win');
 const helpListen = require('./lib/listeners/help');
 const statsListen = require('./lib/listeners/stats');
 const statListen = require('./lib/listeners/stat');
-const rollstatsListen = require('./lib/listeners/rollstats');
 const fieldListen = require('./lib/listeners/field');
 const token = process.env.SLACK_API_TOKEN || 'xoxb-42755557314-EKXlEOaUqrqu8WjAcF0T1hCp';
 
@@ -31,7 +30,6 @@ bot.timeout = 10 * 60 * 1000;
   helpListen,
   statListen,
   statsListen,
-  rollstatsListen,
   fieldListen
 ].forEach((listener) => {
   bot.listen(listener.matcher, listener.callback);
