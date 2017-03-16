@@ -9,12 +9,13 @@ const winListen = require('./lib/listeners/win');
 const helpListen = require('./lib/listeners/help');
 const statsListen = require('./lib/listeners/stats');
 const statListen = require('./lib/listeners/stat');
-const token = process.env.SLACK_API_TOKEN || '';
+const fieldListen = require('./lib/listeners/field');
+const token = process.env.SLACK_API_TOKEN || 'xoxb-42755557314-EKXlEOaUqrqu8WjAcF0T1hCp';
 
 module.exports = bot = new Bot(token);
 bot.web = new WebClient(token);
 
-bot.use(whitelist(['foos', 'mikestest'], bot.web));
+bot.use(whitelist(['foos', 'foosbottest'], bot.web));
 bot.currentGames = {};
 bot.maximum = 4;
 bot.timeout = 10 * 60 * 1000;
@@ -28,7 +29,8 @@ bot.timeout = 10 * 60 * 1000;
   winListen,
   helpListen,
   statListen,
-  statsListen
+  statsListen,
+  fieldListen
 ].forEach((listener) => {
   bot.listen(listener.matcher, listener.callback);
 })

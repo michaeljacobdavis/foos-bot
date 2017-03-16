@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "id": "U18LF47H9",
+      "wins": 1,
+      "losses": 0
+    },
+    {
+      "id": "U18N7GD98",
+      "wins": 1,
+      "losses": 0
+    },
+    {
+      "id": "U18N374SZ",
+      "wins": 0,
+      "losses": 1
+    },
+    {
+      "id": "U18N82DJ5",
+      "wins": 0,
+      "losses": 1
+    }
+  ]
+}
