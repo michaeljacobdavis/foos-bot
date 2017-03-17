@@ -1,28 +1,3 @@
 {
-  "users": [
-    {
-      "id": "U18LF47H9",
-      "wins": 15,
-      "losses": 6,
-      "name": "Justin"
-    },
-    {
-      "id": "U18N7GD98",
-      "wins": 9,
-      "losses": 12,
-      "name": "foosy"
-    },
-    {
-      "id": "U18N374SZ",
-      "wins": 9,
-      "losses": 12,
-      "name": "bendy"
-    },
-    {
-      "id": "U18N82DJ5",
-      "wins": 9,
-      "losses": 12,
-      "name": "lazy"
-    }
-  ]
+  "users": []
 }
