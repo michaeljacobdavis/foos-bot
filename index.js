@@ -13,7 +13,7 @@ const statListen = require('./lib/listeners/stat');
 const alltimeListen = require('./lib/listeners/alltime');
 const fieldListen = require('./lib/listeners/field');
 const swapListen = require('./lib/listeners/swap');
-const token = process.env.SLACK_API_TOKEN || 'xoxb-42755557314-EKXlEOaUqrqu8WjAcF0T1hCp';
+const token = process.env.SLACK_API_TOKEN;
 
 module.exports = bot = new Bot(token);
 bot.web = new WebClient(token);
