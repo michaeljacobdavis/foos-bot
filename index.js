@@ -2,6 +2,7 @@ const Bot = require('slacky');
 const WebClient = require('@slack/client').WebClient;
 const whitelist = require('slacky-middleware-white-black-list').whitelist;
 const startListen = require('./lib/listeners/start');
+const unofficialListen = require('./lib/listeners/unofficial');
 const inListen = require('./lib/listeners/in');
 const stopListen = require('./lib/listeners/stop');
 const outListen = require('./lib/listeners/out');
@@ -21,10 +22,13 @@ bot.use(whitelist(['foos', 'foosbottest'], bot.web));
 bot.currentGames = {};
 bot.maximum = 4;
 bot.timeout = 10 * 60 * 1000;
+bot.swapCnt = 0;
+bot.unofficial = false;
 
 // Add listeners
 [
   startListen,
+  unofficialListen,
   inListen,
   outListen,
   stopListen,
