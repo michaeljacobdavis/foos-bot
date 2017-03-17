@@ -9,7 +9,9 @@ const winListen = require('./lib/listeners/win');
 const helpListen = require('./lib/listeners/help');
 const statsListen = require('./lib/listeners/stats');
 const statListen = require('./lib/listeners/stat');
+const alltimeListen = require('./lib/listeners/alltime');
 const fieldListen = require('./lib/listeners/field');
+const swapListen = require('./lib/listeners/swap');
 const token = process.env.SLACK_API_TOKEN || 'xoxb-42755557314-EKXlEOaUqrqu8WjAcF0T1hCp';
 
 module.exports = bot = new Bot(token);
@@ -30,7 +32,9 @@ bot.timeout = 10 * 60 * 1000;
   helpListen,
   statListen,
   statsListen,
-  fieldListen
+  alltimeListen,
+  fieldListen,
+  swapListen
 ].forEach((listener) => {
   bot.listen(listener.matcher, listener.callback);
 })
