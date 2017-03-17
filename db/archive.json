@@ -239,6 +239,30 @@
       ],
       "winningFieldColor": "BLUE",
       "timestamp": 1489675726571
+    },
+    {
+      "winner": [
+        "U18N374SZ",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N82DJ5",
+        "U18N7GD98"
+      ],
+      "winningFieldColor": "WHITE",
+      "timestamp": 1489754812690
+    },
+    {
+      "winner": [
+        "U18N374SZ",
+        "U18LF47H9"
+      ],
+      "loser": [
+        "U18N7GD98",
+        "U18N82DJ5"
+      ],
+      "winningFieldColor": "WHITE",
+      "timestamp": 1489754844647
     }
   ]
 }
