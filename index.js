@@ -18,7 +18,7 @@ const token = process.env.SLACK_API_TOKEN;
 module.exports = bot = new Bot(token);
 bot.web = new WebClient(token);
 
-bot.use(whitelist(['foos', 'foosbottest'], bot.web));
+bot.use(whitelist(['foos'], bot.web));
 bot.currentGames = {};
 bot.maximum = 4;
 bot.timeout = 10 * 60 * 1000;
