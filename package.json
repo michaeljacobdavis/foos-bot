@@ -14,11 +14,12 @@
   "dependencies": {
     "@slack/client": "^2.3.0",
     "async": "^2.0.0-rc.3",
-    "lowdb": "^0.12.5",
     "lodash": "^4.11.2",
+    "lowdb": "^0.12.5",
     "request": "2.69.0",
     "slacky": "*",
-    "slacky-middleware-white-black-list": "^1.0.0"
+    "slacky-middleware-white-black-list": "^1.0.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {
     "eslint": "^2.6.0",
