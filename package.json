@@ -7,16 +7,24 @@
   "main": "index.js",
   "author": "Mike Davis",
   "license": "MIT",
+  "scripts": {
+    "dev": "nf start",
+    "start": "node --debug index.js",
+    "stop": "forever stopall"
+  },
   "dependencies": {
     "@slack/client": "^2.3.0",
     "async": "^2.0.0-rc.3",
-    "lowdb": "^0.12.5",
+    "forever": "^0.15.1",
+    "lodash": "^4.13.1",
+    "mongodb": "^1.4.40",
+    "monk": "^1.0.1",
     "slacky": "*",
     "slacky-middleware-white-black-list": "^1.0.0"
   },
   "devDependencies": {
     "eslint": "^2.6.0",
-    "forever": "^0.15.1",
+    "foreman": "^1.4.1",
     "nodemon": "^1.9.1"
   },
   "repository": {
